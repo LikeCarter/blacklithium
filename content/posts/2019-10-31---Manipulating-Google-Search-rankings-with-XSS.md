@@ -44,7 +44,7 @@ https://foo.com/stores/?page=<script>alert('hello')</script>
 
 However, most sites are clever and will sanitize anything in \<script\> tags. Not to worry, millions of sites are still vulnerable. For example, Bootstrap 3.3.7 has the following XSS vulnerability:
 
-```
+```html
 <button data-toggle=”collapse” data-target=”<img src=x onerror=alert('hello')>”>Test</button>
 ```
 
