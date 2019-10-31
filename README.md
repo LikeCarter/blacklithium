@@ -1,5 +1,7 @@
 # A personal blog
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/168a1da6-3a31-4320-9ba5-855f56686d55/deploy-status)](https://app.netlify.com/sites/heuristic-beaver-df914c/deploys)
+
 Built with Gatsby.
 
 You can see this site running at [carter.sprigings.com](https://carter.sprigings.com).
@@ -52,7 +54,6 @@ Note: There is a second link: `http://localhost:8000/___graphql`. This is a tool
     ├── constants
     ├── templates
     └── utils
-
 ```
 
 ## Credit
