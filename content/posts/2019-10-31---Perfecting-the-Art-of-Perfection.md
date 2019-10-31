@@ -9,9 +9,12 @@ description: >-
   XSS Auditor, which later versions of Chrome use to protect the user from XSS
   attacks. Many sites are susceptible to XSS Attacks, where the URL can be
   manipulated to reflect unsanitized Javascript code.
-category: Programming
+category: Hacking
 tags:
-  - Programming XSS SEO
+  - Programming
+  - Hacking
+  - XSS
+  - SEO
 ---
 ## The cause
 
