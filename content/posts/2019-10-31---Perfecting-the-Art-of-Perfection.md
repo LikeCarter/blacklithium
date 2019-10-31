@@ -2,7 +2,7 @@
 template: post
 title: Manipulating Google Search rankings with XSS
 slug: /posts/manipulating-google-search-rankings-with-xss/
-draft: true
+draft: false
 date: 2019-10-31T23:46:37.121Z
 description: >-
   Googlebot is based on Google Chrome version 41 (2015), and therefore it has no
