@@ -2,7 +2,7 @@
 
 Built with Gatsby.
 
-You can see this site running here [carter.sprigings.com](https://carter.sprigings.com).
+You can see this site running at [carter.sprigings.com](https://carter.sprigings.com).
 
 ## Development
 
@@ -14,7 +14,7 @@ gatsby develop
 
 Site is now running at `http://localhost:8000`!
 
-Note: There is asecond link: `http://localhost:8000/___graphql`. This is a tool to experiment with querying data. Information on this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).
+Note: There is a second link: `http://localhost:8000/___graphql`. This is a tool to experiment with querying data. Information on this tool can be found in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).
 
 ## Folder Structure
 
