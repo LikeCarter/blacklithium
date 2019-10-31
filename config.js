@@ -8,7 +8,7 @@ module.exports = {
   copyright: '© Carter Sprigings 2019',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'UA-57619073-6',
   useKatex: false,
   menu: [
     {
