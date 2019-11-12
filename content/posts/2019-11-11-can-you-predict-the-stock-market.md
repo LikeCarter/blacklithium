@@ -6,7 +6,12 @@ draft: false
 date: 2019-11-11T22:15:13.746Z
 description: >-
   The Sharpe Ratio is a risk-adjusted measure of return that uses standard
-  deviation to represent risk.
+  deviation to represent risk. Sortino ratio is a modification of the Sharpe
+  ratio but penalizes only those returns falling below a user-specified target.
+  The Treynor ratio is a measurement of the returns earned in excess of that
+  which could have been earned on an investment that has no diversifiable risk
+  (e.g., Treasury bills or a completely diversified portfolio), per each unit of
+  market risk assumed.
 category: Finance
 tags:
   - Finance
@@ -51,7 +56,7 @@ In the ratio, the downside risk (denominator) is target semi-deviation (the squa
 
 ## Treynor Ratio
 
-The Treynor ratio, named after Jack L. Treynor, works only with systematic risk of a portfolio whereas the Sharpe ratio observes both systematic and idiosyncratic risks. 
+The Treynor ratio, named after Jack L. Treynor, is a measurement of the returns earned in excess of that which could have been earned on an investment that has no diversifiable risk (e.g., Treasury bills or a completely diversified portfolio), per each unit of market risk assumed. It works only with systematic risk of a portfolio whereas the Sharpe ratio observes both systematic and idiosyncratic risks. 
 
 
 
