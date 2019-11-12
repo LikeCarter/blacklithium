@@ -18,15 +18,17 @@ tags:
   - Investment
   - Trading
 ---
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 ## Sharpe Ratio
 
 Named after William F. Sharpe, who developed it in 1966 (revised in 1994), the Sharpe Ratio is a risk-adjusted measure of return that uses standard deviation to represent risk. The Sharpe ratio is simply the return per unit of risk (represented by variance).  The higher the Sharpe ratio, the better the combined performance of "risk" and return.
 
 Using an annualized Sharpe Ratio is useful for comparison of multiple return streams.  The annualized Sharpe ratio is computed by dividing the annualized mean monthly excess return by the annualized monthly standard deviation of excess return. Like any other mathematical model, it relies on the data being correct – Ponzi schemes have high Sharpe ratios.
 
-This function annualizes the number based on the scale parameter.
-
-
+\(S\_{a} = {\frac{E\[R\_{a} - R\_{f}]}{\sigma\_{d}}}\)
 
 ## Information Ratio
 
