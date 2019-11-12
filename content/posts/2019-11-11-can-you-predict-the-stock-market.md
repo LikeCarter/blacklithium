@@ -1,6 +1,6 @@
 ---
 template: post
-title: 'What is the difference between Sharpe, Jensen, and Treynor Ratios?'
+title: 'What is the difference between Sharpe, Jensen, and Treynor ratios?'
 slug: sharpe-ratio-or-sortino-ratio-or-treynor-ratio
 draft: false
 date: 2019-11-11T22:15:13.746Z
@@ -73,7 +73,6 @@ Sortini ratio equation:
 ![Sortini ratio equation](/media/sortini.svg "Sortini ratio equation")
 
 ## Additional information
-
 ### Sharpe Ratio Performance
 
 Berkshire Hathaway had a Sharpe ratio of 0.76 for the period 1976 to 2011, higher than any other stock or mutual fund with a history of more than 30 years. The stock market had a Sharpe ratio of 0.39 for the same period.
