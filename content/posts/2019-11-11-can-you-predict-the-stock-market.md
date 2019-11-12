@@ -1,7 +1,7 @@
 ---
 template: post
-title: What is the difference between a Sharpe Ratio and Sortino Ratio?
-slug: sharpe-ratio-or-sortino-ratio
+title: 'What is the difference between a Sharpe, Information, and Sortino Ratios?'
+slug: sharpe-ratio-information-ratio-or-sortino-ratio
 draft: false
 date: 2019-11-11T22:15:13.746Z
 description: >-
