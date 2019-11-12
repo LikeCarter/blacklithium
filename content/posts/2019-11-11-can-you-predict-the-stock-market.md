@@ -68,9 +68,9 @@ Because the Sortino ratio focuses only on the negative deviation of a portfolio'
 
 In the ratio, the downside risk (denominator) is target semi-deviation (the square root of target semi-variance). An intuitive way to view downside risk is the annualized standard deviation of returns below the target.
 
-Sortini ratio equation:
+Sortino ratio equation:
 
-![Sortini ratio equation](/media/sortini.svg "Sortini ratio equation")
+![Sortino ratio equation](/media/sortino.svg "Sortino ratio equation")
 
 ## Additional information
 ### Sharpe Ratio Performance
