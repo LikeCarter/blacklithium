@@ -2,7 +2,7 @@
 template: post
 title: Can you predict the stock market?
 slug: can-you-predict-the-stock-market
-draft: true
+draft: false
 date: 2019-11-11T22:15:13.746Z
 description: >-
   Not particularly accurate two-dimensional simulation of 262144 bodies
