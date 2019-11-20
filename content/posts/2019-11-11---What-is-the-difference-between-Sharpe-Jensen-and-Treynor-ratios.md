@@ -1,7 +1,7 @@
 ---
 template: post
 title: 'What is the difference between Sharpe, Jensen, and Treynor ratios?'
-slug: sharpe-ratio-or-sortino-ratio-or-treynor-ratio
+slug: /posts/sharpe-ratio-or-sortino-ratio-or-treynor-ratio
 draft: false
 date: 2019-11-11T22:15:13.746Z
 description: >-
