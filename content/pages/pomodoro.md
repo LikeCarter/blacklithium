@@ -16,3 +16,7 @@ Here are a few screenshots:
 ## Contact me
 
 The best way to reach me is via [carter@sprigings.com](mailto:carter@sprigings.com). You can also [tweet at me](https://twitter.com/cartersprigings).
+
+## Privacy Policy
+
+I have a transparent privacy policy located [here](/pomodoro/privacy).
