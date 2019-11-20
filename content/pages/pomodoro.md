@@ -3,7 +3,6 @@ title: I built an Apple Watch app for the Pomodoro Technique
 template: page
 slug: pomodoro
 ---
-## 
 
 I found that the time management apps on the app store were too cluttered, and reduced the productivity they meant to encourage. So I spent a couple of days making *Pomodoro Focus*. It's free.
 
