@@ -12,10 +12,7 @@ Here are a few screenshots:
 <img title="Focus Screen of Pomodoro Focus App" alt="Focus Screen of Pomodoro Focus App" src="/media/s4-44mm-screenshot-1.png" alt="drawing" style="margin-right: 2.5%; float: left; width:30%;"/>
 
 
-<img title="Break Screen of Pomodoro Focus App" alt="Break Screen of Pomodoro Focus App" src="/media/s4-44mm-screenshot-3.png" alt="drawing" style="margin-right: 2.5%; float: left; width:30%;"/>
-
-<img title="Break Screen of Pomodoro Focus App" alt="Break Screen of Pomodoro Focus App" src="/media/s4-44mm-screenshot-2.png" alt="drawing" style="width:30%;"/>
-
+<img title="Break Screen of Pomodoro Focus App" alt="Break Screen of Pomodoro Focus App" src="/media/s4-44mm-screenshot-3.png" alt="drawing" style="width:30%;"/>
 
 ## Contact me
 
