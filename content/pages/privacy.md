@@ -48,7 +48,7 @@ I also collect some information automatically:
 
 I use information about you as mentioned above and for the purposes listed below:
 
-*   To provide my Services–for example, to set up and maintain your account, host your service, charge you for any of my paid Services,;
+*   To provide my Services–for example, to set up and maintain your account, host your service, charge you for any of my paid Services;
 *   To further develop and improve my Services–for example by adding new features that I think my users will enjoy or will help them;
 *   To monitor and analyze trends and better understand how users interact with my Services, which helps me improve my Services and make them easier to use;
 *   To communicate with you. For example, I may email you to solicit your feedback, sham tips for getting the most out of my products, text you to verify your payment, or call you to sham offers and promotions that I think will be of interest to you. If you don’t want to hear from me, you can opt out of marketing communications at any time. (Please keep in mind that even if you opt out, I'll still send you important updates relating to your account)
