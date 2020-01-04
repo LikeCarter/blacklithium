@@ -17,7 +17,7 @@ Assuming you have enabled authentication with `amplify add auth` and already add
 
 Create a class that represents a User. Publishing the `isAuth` variable is important.
 
-```
+```swift
 //  User.swift
 
 import AWSMobileClient
