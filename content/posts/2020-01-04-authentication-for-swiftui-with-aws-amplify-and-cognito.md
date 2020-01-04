@@ -2,7 +2,7 @@
 template: post
 title: Authentication for SwiftUI with AWS Amplify and Cognito
 slug: authentication-for-swiftui-with-aws-amplify-and-cognito
-draft: true
+draft: false
 date: 2020-01-04T15:42:37.506Z
 description: >-
   This guide will allow you to quickly get set up with a simple Global
@@ -55,7 +55,7 @@ class User: ObservableObject {
 
 In the \`SceneDelegate.swift\` file, initialize the `AWSMobileClient` and the `User` object. Add the `User` as an EnvironmentVariable.
 
-```
+```swift
 //  SceneDelegate.swift
 
 func scene(_ scene: UIScene, willConnectTo _: UISceneSession, options _: UIScene.ConnectionOptions) {
@@ -91,7 +91,7 @@ func scene(_ scene: UIScene, willConnectTo _: UISceneSession, options _: UIScene
 
 Create a new View named `LoginView`. It will contain a simple SignUp and SignIn form. For this guide, amplify authentication was set up to use a phone number instead of a username or email. You can run `amplify auth update` to change your configuration. Or you can modify the following code.
 
-```
+```swift
 //  LoginView.swift
 
 struct LoginView: View {
@@ -142,7 +142,7 @@ struct LoginView: View {
 
 Add utility functions to facilitate authentication found in the LoginView.
 
-```
+```swift
 //  LoginView.swift
 
     func VerifySignup(username: String, challenge: String) {
@@ -221,7 +221,7 @@ Add utility functions to facilitate authentication found in the LoginView.
 
 Optionally, you can add a function to help match authentication errors.
 
-```
+```swift
 //  LoginView.swift
 
 func matchError(error: AWSMobileClientError) {
@@ -277,7 +277,7 @@ func matchError(error: AWSMobileClientError) {
 
 Finally, add the last bit of logic to the ContentView.
 
-```
+```swift
 //  ContentView.swift
 
 import AWSMobileClient
