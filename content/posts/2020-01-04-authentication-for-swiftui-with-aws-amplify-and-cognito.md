@@ -53,7 +53,7 @@ class User: ObservableObject {
 }
 ```
 
-In the \`SceneDelegate.swift\` file, initialize the `AWSMobileClient` and the `User` object. Add the `User` as an EnvironmentVariable.
+In the `SceneDelegate.swift` file, initialize the `AWSMobileClient` and the `User` object. Add the `User` as an EnvironmentVariable.
 
 ```swift
 //  SceneDelegate.swift
