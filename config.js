@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://carter.sprigings.com',
   pathPrefix: '/',
   title: 'Carter Sprigings',
-  subtitle: 'Personal website. Personal opinions.',
+  subtitle: 'Personal blog of Carter Sprigings.',
   copyright: '© Carter Sprigings 2019',
   disqusShortname: '',
   postsPerPage: 4,
