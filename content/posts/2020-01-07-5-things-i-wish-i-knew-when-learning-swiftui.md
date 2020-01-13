@@ -206,7 +206,7 @@ struct ContentView: View {
 
 ## 5. Use a proxy to validate TextField input.
 
-Using a proxy is an excellent tool to filter input from a TextField. It is possible to restrict input length, cast the input to a different type, or match the input to a pattern in realtime. Here we filter so that the input can only be positive:
+Using a proxy is an excellent tool to filter input from a `TextField`. It is possible to restrict input length, cast the input to a different type, or match the input to a pattern in realtime. Here we filter so that the input can only be positive:
 
 ```swift
 //  ContentView.swift
