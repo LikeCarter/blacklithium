@@ -2,7 +2,7 @@
 template: post
 title: 5 Things I Wish I Knew When Learning SwiftUI
 slug: 5-things-i-wish-i-knew-when-learning-swiftui
-draft: true
+draft: false
 date: 2020-01-08T01:53:03.056Z
 description: >
   1. Use bound variables to dismiss views and control navigation.
@@ -90,28 +90,68 @@ struct ChildView: View {
 }
 ```
 
-`@ObservableObject` is best used for a class (containing one or more values) that may or may not need to cause a refresh of the view when it changes.
+`@ObservableObject` is best used for a class (containing one or more values) that conforms to `ObservableObject`. The `@Published` wrapper is used to indicate a member variable should refresh a view upon being set. The object must be manually passed from a parent to a child view. An example is shown in #4. 
 
-`@EnvironmentObject` is best used 
+`@EnvironmentObject` is also used with objects that conform to `ObservableObject`. But **it removes the need to manually pass the object from a parent to a child view.** Simply put, it is a simpler and more convenient way to update state across many views. However, when navigating, using a `NavigationLink` or showing a modal, the object must be passed once again.
+
+For example:
+
+```swift
+\\  ParentView.swift
+
+class Object: ObservableObject {
+    var toggle: Bool = false
+}
+
+struct ParentView: View {
+    var object: Object = Object()
+
+    var body: some View {
+        Text("\(self.object.toggle)")
+        ChildView().environmentObject(self.object)
+      }
+    }
+}
+```
+
+```swift
+\\  ChildView.swift
+
+struct ContentView: View {
+    @EnvironmentObject var object: Object
+
+    var body: some View {
+        Button({
+          self.object.toggle = !self.object.toggle
+        }) {
+          Text("Toggle")
+      }
+    }
+}
+```
 
 3. When do I use `@Published`?
 
 The property wrapper `@Published` is an *opt-in* wrapper designed for use within an `ObservableObject`. All views using a variable wrapped with `@Published` are refreshed upon any change.
 
-For example, the following code does **not** propagate changes to the `name` variable:
+For example, the following code does **not** propagate changes to the `toggle` variable:
 
 ```swift
 \\  ContentView.swift
 
 class Object: ObservableObject {
-    var name: String
+    var toggle: Bool
 }
 
 struct ContentView: View {
-    private var object = Object(name: "Example")
+    private var object = Object(toggle: false)
     var body: some View {
-        Text("\(object.name)")
-
+        Text("\(object.toggle)")
+        Button({
+          self.object.toggle = !self.object.toggle
+        }) {
+          Text("Toggle")
+      }
     }
 }
 ```
@@ -124,19 +164,23 @@ Below, we can see that using the @Published wrapper will allow changes to propag
 \\  ContentView.swift
 
 class Object: ObservableObject {
-    @Published var name: String
+    @Published var toggle: Bool
 }
 
 struct ContentView: View {
-    private var object = Object(name: "Example")
+    private var object = Object(toggle: false)
     var body: some View {
-        Text("\(object.name)")
-
+        Text("\(object.toggle)")
+        Button({
+          self.object.toggle = !self.object.toggle
+        }) {
+          Text("Toggle")
+      }
     }
 }
 ```
 
-However, when many views access an `ObservableObject`, **performance can quickly degrade**. It is important to mark only necessary variables with `@Published`. In more extreme cases, it is possible to implement a custom Publisher / Subscriber system to filter for when a view should update.
+However, when many views access an `ObservableObject`, **performance can quickly degrade**. It is important to mark only necessary variables with `@Published`. In more extreme cases, it is possible to implement a custom Publisher / Subscriber system to filter for when a view should update. This will improve performance.
 
 4. Properly dismiss a keyboard with a tap gesture.
 
@@ -173,7 +217,6 @@ struct ContentView: View {
 //  ContentView.swift
 
 struct TestView: View {
-
     @State private var positiveNumber: Int = 1
 
     private var positiveNumberProxy: Binding<String> {
