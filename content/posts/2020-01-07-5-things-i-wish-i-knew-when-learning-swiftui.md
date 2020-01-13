@@ -83,7 +83,7 @@ struct ChildView: View {
 }
 ```
 
-`@ObservableObject` is best used for a class (containing one or more values) that conforms to `ObservableObject`. The `@Published` wrapper is used to indicate a member variable should refresh a view upon being set. The object must be manually passed from a parent to a child view. An example is shown in #4. 
+`@ObservableObject` is best used for a class (containing one or more values) that conforms to `ObservableObject`. The `@Published` wrapper is used to indicate a member variable should refresh a view upon being set. The object must be manually passed from a parent to a child view. An example is shown in #3. 
 
 `@EnvironmentObject` is also used with objects that conform to `ObservableObject`. But **it removes the need to manually pass the object from a parent to a child view.** Simply put, it is a simpler and more convenient way to update state across many views. However, when navigating, using a `NavigationLink` or showing a modal, the object must be passed once again.
 
@@ -149,28 +149,27 @@ struct ContentView: View {
 }
 ```
 
-Below, we can see that using the @Published wrapper will allow changes to propagate upon a button press.
+Below, we can see that using the `@Published` wrapper will allow changes to propagate upon a button press.
 
-````
-    ```swift
-    \\  ContentView.swift
+```swift
+\\  ContentView.swift
 
-    class Object: ObservableObject {
-        @Published var toggle: Bool
-    }
+class Object: ObservableObject {
+    @Published var toggle: Bool
+}
 
-    struct ContentView: View {
-        private var object = Object(toggle: false)
-        var body: some View {
-            Text("\(object.toggle)")
-            Button({
-              self.object.toggle = !self.object.toggle
-            }) {
-              Text("Toggle")
-          }
+struct ContentView: View {
+    private var object = Object(toggle: false)
+    var body: some View {
+        Text("\(object.toggle)")
+        Button({
+            self.object.toggle = !self.object.toggle
+        }) {
+            Text("Toggle")
         }
     }
-````
+}
+```
 
 However, when many views access an `ObservableObject`, **performance can quickly degrade**. It is important to mark only necessary variables with `@Published`. In more extreme cases, it is possible to implement a custom Publisher / Subscriber system to filter for when a view should update. This will improve performance.
 
