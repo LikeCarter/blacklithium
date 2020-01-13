@@ -175,6 +175,8 @@ However, when many views access an `ObservableObject`, **performance can quickly
 
 ## 4. Properly dismiss a keyboard with a tap gesture.
 
+Users expect to dismiss a keyboard prompt by tapping the outside of an input. To enable this in SwiftUI, I have found the following solution works the best:
+
 ```swift
 //  ContentView.swift
 
@@ -206,7 +208,7 @@ struct ContentView: View {
 
 Using a proxy is an excellent tool to filter input from a TextField. It is possible to restrict input length, cast the input to a different type, or match the input to a pattern in realtime. Here we filter so that the input can only be positive:
 
-```
+```swift
 //  ContentView.swift
 
 struct TestView: View {
