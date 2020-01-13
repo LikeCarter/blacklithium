@@ -52,7 +52,7 @@ struct DetailView: View {
 }
 ```
 
-## 2. The difference between `@State`, `@ObservableObject`, and `@EnvironmentObject`.
+## 2. The difference between @State, @ObservableObject, and @EnvironmentObject.
 
 `@State` is best used for a value that is applicable to one or two views. It causes an automatic refresh of the view when it changes. The variable must be manually passed from a parent to a child view. If you need to allow a child view to update the parent view's `@State` variable, use the `@Binding` wrapper. For example:
 
@@ -123,7 +123,7 @@ struct ContentView: View {
 }
 ```
 
-## 3. When do I use `@Published`?
+## 3. When do I use @Published?
 
 As little as possible. The property wrapper `@Published` is an _opt-in_ wrapper designed for use within an `ObservableObject`. All views using a variable wrapped with `@Published` are refreshed upon any change.
 
