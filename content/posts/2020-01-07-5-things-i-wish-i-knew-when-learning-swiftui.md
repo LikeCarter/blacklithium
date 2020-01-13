@@ -5,23 +5,16 @@ slug: 5-things-i-wish-i-knew-when-learning-swiftui
 draft: false
 date: 2020-01-08T01:53:03.056Z
 description: >
-  1. Use bound variables to dismiss views and control navigation.
-
-  2. The difference between `@State`, `@ObservableObject`, and
-  `@EnvironmentObject`.
-
-  3. When do I use `@Published`?
-
-  4. Properly dismiss a keyboard with a tap gesture.
-
-  5. Use a proxy to validate TextField input.
+  SwiftUI is a relatively new extension of Swift, and its documentation is
+  sometimes inadequate. Here I try to describe some important knowledge and
+  common pitfalls I wish I knew before starting out.
 category: Programming
 tags:
   - SwiftUI
   - Programming
   - iOS
 ---
-1. Use bound variables to dismiss views and control navigation.
+## 1. Use bound variables to dismiss views and control navigation.
 
 The documentation is unclear on how to properly dismiss a Modal or View. Most discussions lead you to using the `PresentationMode` environment variable. However, this solution leads to issues rendering navigation titles. The best solution is to use a bound variable and the `isActive` parameter.
 
@@ -59,7 +52,7 @@ struct DetailView: View {
 }
 ```
 
-2. The difference between `@State`, `@ObservableObject`, and `@EnvironmentObject`.
+## 2. The difference between `@State`, `@ObservableObject`, and `@EnvironmentObject`.
 
 `@State` is best used for a value that is applicable to one or two views. It causes an automatic refresh of the view when it changes. The variable must be manually passed from a parent to a child view. If you need to allow a child view to update the parent view's `@State` variable, use the `@Binding` wrapper. For example:
 
@@ -130,9 +123,9 @@ struct ContentView: View {
 }
 ```
 
-3. When do I use `@Published`?
+## 3. When do I use `@Published`?
 
-The property wrapper `@Published` is an *opt-in* wrapper designed for use within an `ObservableObject`. All views using a variable wrapped with `@Published` are refreshed upon any change.
+As little as possible. The property wrapper `@Published` is an _opt-in_ wrapper designed for use within an `ObservableObject`. All views using a variable wrapped with `@Published` are refreshed upon any change.
 
 For example, the following code does **not** propagate changes to the `toggle` variable:
 
@@ -151,38 +144,37 @@ struct ContentView: View {
           self.object.toggle = !self.object.toggle
         }) {
           Text("Toggle")
-      }
+        }
     }
 }
 ```
 
 Below, we can see that using the @Published wrapper will allow changes to propagate upon a button press.
 
-```
+````
+    ```swift
+    \\  ContentView.swift
 
-```swift
-\\  ContentView.swift
-
-class Object: ObservableObject {
-    @Published var toggle: Bool
-}
-
-struct ContentView: View {
-    private var object = Object(toggle: false)
-    var body: some View {
-        Text("\(object.toggle)")
-        Button({
-          self.object.toggle = !self.object.toggle
-        }) {
-          Text("Toggle")
-      }
+    class Object: ObservableObject {
+        @Published var toggle: Bool
     }
-}
-```
+
+    struct ContentView: View {
+        private var object = Object(toggle: false)
+        var body: some View {
+            Text("\(object.toggle)")
+            Button({
+              self.object.toggle = !self.object.toggle
+            }) {
+              Text("Toggle")
+          }
+        }
+    }
+````
 
 However, when many views access an `ObservableObject`, **performance can quickly degrade**. It is important to mark only necessary variables with `@Published`. In more extreme cases, it is possible to implement a custom Publisher / Subscriber system to filter for when a view should update. This will improve performance.
 
-4. Properly dismiss a keyboard with a tap gesture.
+## 4. Properly dismiss a keyboard with a tap gesture.
 
 ```swift
 //  ContentView.swift
@@ -211,7 +203,9 @@ struct ContentView: View {
 }
 ```
 
-5. Use a proxy to validate TextField input.
+## 5. Use a proxy to validate TextField input.
+
+Using a proxy is an excellent tool to filter input from a TextField. It is possible to restrict input length, cast the input to a different type, or match the input to a pattern in realtime. Here we filter so that the input can only be positive:
 
 ```
 //  ContentView.swift
