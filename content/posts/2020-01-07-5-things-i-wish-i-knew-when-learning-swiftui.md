@@ -57,7 +57,7 @@ struct DetailView: View {
 `@State` is best used for a value that is applicable to one or two views. It causes an automatic refresh of the view when it changes. The variable must be manually passed from a parent to a child view. If you need to allow a child view to update the parent view's `@State` variable, use the `@Binding` wrapper. For example:
 
 ```swift
-\\  ParentView.swift
+//  ParentView.swift
 
 struct ParentView: View {
     @State var toggle: Bool = false
@@ -69,7 +69,7 @@ struct ParentView: View {
 ```
 
 ```swift
-\\  ChildView.swift
+//  ChildView.swift
 
 struct ChildView: View {
     @Binding var toggle: Bool
@@ -90,7 +90,7 @@ struct ChildView: View {
 For example:
 
 ```swift
-\\  ParentView.swift
+//  ParentView.swift
 
 class Object: ObservableObject {
     var toggle: Bool = false
@@ -108,7 +108,7 @@ struct ParentView: View {
 ```
 
 ```swift
-\\  ChildView.swift
+//  ChildView.swift
 
 struct ContentView: View {
     @EnvironmentObject var object: Object
@@ -130,7 +130,7 @@ As little as possible. The property wrapper `@Published` is an _opt-in_ wrapper 
 For example, the following code does **not** propagate changes to the `toggle` variable:
 
 ```swift
-\\  ContentView.swift
+//  ContentView.swift
 
 class Object: ObservableObject {
     var toggle: Bool
@@ -152,7 +152,7 @@ struct ContentView: View {
 Below, we can see that using the `@Published` wrapper will allow changes to propagate upon a button press.
 
 ```swift
-\\  ContentView.swift
+//  ContentView.swift
 
 class Object: ObservableObject {
     @Published var toggle: Bool
