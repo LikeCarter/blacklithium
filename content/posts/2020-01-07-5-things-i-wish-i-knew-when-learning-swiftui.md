@@ -14,7 +14,7 @@ tags:
   - Programming
   - iOS
 ---
-## 1. Use bound variables to dismiss views and control navigation.
+## 1. How do I dismiss views and control navigation? Use bound variables.
 
 The documentation is unclear on how to properly dismiss a Modal or View. Most discussions lead you to using the `PresentationMode` environment variable. However, this solution leads to issues rendering navigation titles. The best solution is to use a bound variable and the `isActive` parameter.
 
@@ -52,7 +52,9 @@ struct DetailView: View {
 }
 ```
 
-## 2. The difference between @State, @ObservableObject, and @EnvironmentObject.
+## 2. What is the difference between @State, @ObservableObject, and @EnvironmentObject?
+
+### @State
 
 `@State` is best used for a value that is applicable to one or two views. It causes an automatic refresh of the view when it changes. The variable must be manually passed from a parent to a child view. If you need to allow a child view to update the parent view's `@State` variable, use the `@Binding` wrapper. For example:
 
@@ -83,47 +85,11 @@ struct ChildView: View {
 }
 ```
 
-`@ObservableObject` is best used for a class (containing one or more values) that conforms to `ObservableObject`. The `@Published` wrapper is used to indicate a member variable should refresh a view upon being set. The object must be manually passed from a parent to a child view. An example is shown in #3. 
+### @ObservableObject
 
-`@EnvironmentObject` is also used with objects that conform to `ObservableObject`. But **it removes the need to manually pass the object from a parent to a child view.** Simply put, it is a simpler and more convenient way to update state across many views. However, when navigating, using a `NavigationLink` or showing a modal, the object must be passed once again.
+`@ObservableObject` is best used for a class (containing one or more values) that conforms to `ObservableObject`. The `@Published` wrapper is used to indicate a member variable should refresh a view upon being set. The object must be manually passed from a parent to a child view.
 
-For example:
-
-```swift
-//  ParentView.swift
-
-class Object: ObservableObject {
-    var toggle: Bool = false
-}
-
-struct ParentView: View {
-    var object: Object = Object()
-
-    var body: some View {
-        Text("\(self.object.toggle)")
-        ChildView().environmentObject(self.object)
-      }
-    }
-}
-```
-
-```swift
-//  ChildView.swift
-
-struct ContentView: View {
-    @EnvironmentObject var object: Object
-
-    var body: some View {
-        Button({
-          self.object.toggle = !self.object.toggle
-        }) {
-          Text("Toggle")
-      }
-    }
-}
-```
-
-## 3. When do I use @Published?
+*When do I use @Published?*
 
 As little as possible. The property wrapper `@Published` is an _opt-in_ wrapper designed for use within an `ObservableObject`. All views using a variable wrapped with `@Published` are refreshed upon any change.
 
@@ -173,7 +139,65 @@ struct ContentView: View {
 
 However, when many views access an `ObservableObject`, **performance can quickly degrade**. It is important to mark only necessary variables with `@Published`. In more extreme cases, it is possible to implement a custom Publisher / Subscriber system to filter for when a view should update. This will improve performance.
 
-## 4. Properly dismiss a keyboard with a tap gesture.
+### @EnvironmentObject
+
+`@EnvironmentObject` is also used with objects that conform to `ObservableObject`. But **it removes the need to manually pass the object from a parent to a child view.** Simply put, it is a simpler and more convenient way to update state across many views. However, when navigating, using a `NavigationLink` or showing a modal, the object must be passed once again.
+
+For example:
+
+```swift
+//  ParentView.swift
+
+class Object: ObservableObject {
+    var toggle: Bool = false
+}
+
+struct ParentView: View {
+    var object: Object = Object()
+
+    var body: some View {
+        Text("\(self.object.toggle)")
+        ChildView().environmentObject(self.object)
+      }
+    }
+}
+```
+
+```swift
+//  ChildView.swift
+
+struct ContentView: View {
+    @EnvironmentObject var object: Object
+
+    var body: some View {
+        Button({
+          self.object.toggle = !self.object.toggle
+        }) {
+          Text("Toggle")
+      }
+    }
+}
+```
+
+## 3. How do I use UIKit elements in SwiftUI?
+
+Because SwiftUI is still missing quite a few features, it is still necessary to use UIKit elements to build a full app. Most frameworks are written and maintained in UIKit anyways. We can create a SwiftUI object from a UIKit object using the `UIViewRepresentable`:
+
+```swift
+struct Label: UIViewRepresentable {
+
+    func makeUIView(context: UIViewRepresentableContext<Label>) -> UILabel {
+        return UILabel()
+    }
+
+    func updateUIView(_ uiView: UILabel, context: UIViewRepresentableContext<Label>) {
+        uiView.text = "Sample"
+    }
+
+}
+```
+
+## 4. How to properly dismiss a keyboard with a tap gesture?
 
 Users expect to dismiss a keyboard prompt by tapping the outside of an input. To enable this in SwiftUI, I have found the following solution works the best:
 
@@ -204,7 +228,7 @@ struct ContentView: View {
 }
 ```
 
-## 5. Use a proxy to validate TextField input.
+## 5. How do I validate TextField input? Use a proxy.
 
 Using a proxy is an excellent tool to filter input from a `TextField`. It is possible to restrict input length, cast the input to a different type, or match the input to a pattern in realtime. Here we filter so that the input can only be positive:
 
