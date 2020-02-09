@@ -10,7 +10,8 @@ description: >-
   your iOS app.
 category: Programming
 tags:
-  - Swift AWS
+  - Swift
+  - AWS
 ---
 
 ## Setup
