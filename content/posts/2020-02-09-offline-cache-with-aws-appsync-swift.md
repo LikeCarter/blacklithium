@@ -2,7 +2,7 @@
 template: post
 title: Offline Cache with AWS AppSync (Swift)
 slug: offline-cache-with-aws-appsync-swift
-draft: true
+draft: false
 date: 2020-02-09T13:53:09.381Z
 description: >-
   AWS Amplify has great support for Querying and Mutating the offline cache.
