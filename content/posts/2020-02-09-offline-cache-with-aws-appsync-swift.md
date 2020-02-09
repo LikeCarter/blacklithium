@@ -12,6 +12,8 @@ category: Programming
 tags:
   - Swift
   - AWS
+  - Programming
+  - iOS
 ---
 
 ## Setup
