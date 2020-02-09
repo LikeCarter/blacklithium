@@ -2,7 +2,7 @@
 template: post
 title: Which countries are the most connected?
 slug: which-countries-are-the-most-connected
-draft: true
+draft: false
 date: 2020-02-09T00:47:42.995Z
 description: test
 category: Data Visualization
