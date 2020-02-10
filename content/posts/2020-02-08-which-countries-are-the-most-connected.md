@@ -40,7 +40,7 @@ tags:
 
 Many countries are making the [transition](https://deloitte.wsj.com/riskandcompliance/2019/12/20/expect-more-gains-in-renewable-energy-in-2020/) from fossil fuels to renewable sources in response to the climate crisis. However, the worldwide production and export of crude oil have been steadily increasing. Oil is a large (and growing) revenue stream in most countries. It is also a vital resource in [developing countries](https://www.wsj.com/articles/in-tougher-times-china-falls-back-on-coal-11577115096). It is hard to wean countries and their economies off of crude oil.
 
-While Canada and Norway are committed to hitting climate change emissions targets, they remain large exporters of crude oil. The Paris Climate Accord (<1.5ºC) does not account for a countries' crude oil export. Canada and Norway may very well hit their emissions targets and meet the Paris Climate Accord (Norway [loves Teslas](https://www.wsj.com/articles/tesla-breaks-norways-all-time-sales-record-1396452992)).
+While Canada and Norway are committed to hitting climate change emissions targets, they remain large exporters of crude oil. The Paris Climate Accord (<1.5ºC) does not account for a countries' crude oil export. Canada and Norway may very well hit their emissions targets and meet the Paris Climate Accord (Norway [loves Teslas](https://www.wsj.com/articles/tesla-breaks-norways-all-time-sales-record-1396452992)), but we all share the same atmosphere.
 
 Crude oil isn't going away anytime soon. So [plant a tree](https://onetreeplanted.org/).
 
