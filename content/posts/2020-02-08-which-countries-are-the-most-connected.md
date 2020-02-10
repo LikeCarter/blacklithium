@@ -13,7 +13,8 @@ description: >-
   crude oil.
 category: Data Visualization
 tags:
-  - Geography World
+  - Data Visualization
+  - Finance
 ---
 ## Crude oil production
 
