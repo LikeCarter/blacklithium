@@ -1,7 +1,7 @@
 ---
 template: post
 title: The World Is Addicted To Crude Oil
-slug: which-countries-are-the-most-connected
+slug: the-world-is-addicted-to-crude-oil
 draft: false
 date: 2020-02-09T00:47:42.995Z
 description: >-
