@@ -16,7 +16,7 @@ tags:
 ---
 ## What is going on with the Coronavirus?
 
-Inconsistent numbers are being [reported](https://www.nytimes.com/2020/02/12/health/coronavirus-cases-china.html) by health officials at the centre of the outbreak. On February 11, the number of new confirmed cases slowed and the Dow closed at a [record](https://www.wsj.com/articles/global-stocks-rise-as-optimism-prevails-11581503200). But only a day later, health officials in Hubei province confirmed 14,840 new infections. The total number of confirmed cases in Hubei Province is now 48,206. In response, the CCP [ousted](https://www.wsj.com/articles/china-ousts-top-official-in-coronavirus-outbreaks-epicenter-11581568911) the party secretaries of Hubei province and Wuhan.
+Health officials in Hubei (centre of the outbreak) are reporting inconsistent [numbers](https://www.nytimes.com/2020/02/12/health/coronavirus-cases-china.html). On February 11, the number of confirmed cases showed signs of levelling off and the Dow Jones closed at a [record](https://www.wsj.com/articles/global-stocks-rise-as-optimism-prevails-11581503200). But only a day later, health officials confirmed 14,840 new infections in Hubei – the total number of is now 48,206. In response, the CCP [ousted](https://www.wsj.com/articles/china-ousts-top-official-in-coronavirus-outbreaks-epicenter-11581568911) the party secretaries of Hubei and Wuhan.
 
 So what is really happening?
 
@@ -26,10 +26,10 @@ So what is really happening?
 
 ### Takeaways
 
-* The majority of cases are still found in Hubei province. 
+* The majority of cases are still found in Hubei. 
 * This sudden jump suggests there are many people in the centre of the outbreak that have not been diagnosed. 
-* Undiagnosed individuals increases the chances of spreading the virus leading to an increased Ro value.
-* The Coronavirus could have a transmission rate (Ro) as high as 3.0 without effective containment measures.
+* Undiagnosed individuals increases the chances of spreading the virus leading to an increased transmission rate (Ro) value.
+* The Coronavirus could have a Ro as high as 3.0 without effective containment measures.
 
 ## Recovered cases
 
@@ -46,11 +46,11 @@ So what is really happening?
 
 ### Takeaways
 
-* The number of deaths has showed linear properties until recently – with 200 deaths reported on February 12.
+* The number of deaths has showed linear properties until recently – with over 200 deaths reported on February 12.
 * The mortality rate is often calculated as the deaths per confirmed cases (2%).
 * The true mortality rate will be closer to the number of dead per recovered + dead individuals. This sits around 15% but will move downwards towards 5-10%.
 
-## Coronavirus in Asia
+## Mapping the Coronavirus in Asia
 
 <img src="https://s3.amazonaws.com/carter.sprigings.com/map.png" alt="Coronavirus map" width="100%"/>
 
@@ -59,7 +59,7 @@ So what is really happening?
 * The radius of the circles are log-scaled to the number of confirmed cases, recoveries, and deaths, respectively.
 * We can see that Hubei Province (in the centre) has the most cases. But also the most deaths by a significant margin.
 * This suggests that the number of deaths increase once the medical system becomes overburdened.
-* Or that the number of cases may be much higher than confirmed.
+* Or that the number of cases is much higher than confirmed (or reported).
 
 ## Conclusion
 
