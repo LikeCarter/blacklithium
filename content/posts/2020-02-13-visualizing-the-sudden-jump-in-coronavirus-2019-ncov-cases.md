@@ -22,9 +22,9 @@ So what is really happening?
 
 ## Confirmed cases
 
-<img src="/media/confirmed-ncov2019.png" alt="Confirmed number of cases" width="100%"/>
+<img src="https://s3.amazonaws.com/carter.sprigings.com/confirmed-ncov2019.png" alt="Confirmed number of cases" width="100%"/>
 
-![](/media/confirmed-ncov2019.png)
+### Takeaways
 
 * The majority of cases are still found in Hubei province. 
 * This sudden jump suggests there are many people in the centre of the outbreak that have not been diagnosed. 
@@ -33,9 +33,7 @@ So what is really happening?
 
 ## Recovered cases
 
-<img src="/media/recovered-ncov2019.png" alt="Confirmed number of cases" width="100%"/>
-
-![](/media/recovered-ncov2019.png)
+<img src="https://s3.amazonaws.com/carter.sprigings.com/recovered-ncov2019.png" alt="Confirmed number of cases" width="100%"/>
 
 ### Takeaways
 
@@ -44,9 +42,7 @@ So what is really happening?
 
 ## Deaths
 
-<img src="/media/death-ncov2019.png" alt="Confirmed number of cases" width="100%"/>
-
-![](/media/death-ncov2019.png)
+<img src="https://s3.amazonaws.com/carter.sprigings.com/deaths-ncov2019.png" alt="Confirmed number of cases" width="100%"/>
 
 ### Takeaways
 
@@ -56,9 +52,7 @@ So what is really happening?
 
 ## Coronavirus in Asia
 
-<img src="/media/map.png" alt="Coronavirus map" width="100%"/>
-
-![](/media/map.png)
+<img src="https://s3.amazonaws.com/carter.sprigings.com/map.png" alt="Coronavirus map" width="100%"/>
 
 ### Takeaways
 
