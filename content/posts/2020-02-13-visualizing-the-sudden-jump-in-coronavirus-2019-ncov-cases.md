@@ -14,7 +14,7 @@ tags:
   - Data Visualization
   - Epidemiology
 ---
-## What is going on with the Coronavirus (2019-nCov)?
+## What is going on with the Coronavirus?
 
 Inconsistent numbers are being [reported](https://www.nytimes.com/2020/02/12/health/coronavirus-cases-china.html) by health officials at the centre of the outbreak. On February 11, the number of new confirmed cases slowed and the Dow closed at a [record](https://www.wsj.com/articles/global-stocks-rise-as-optimism-prevails-11581503200). But only a day later, health officials in Hubei province confirmed 14,840 new infections. The total number of confirmed cases in Hubei Province is now 48,206. In response, the CCP [ousted](https://www.wsj.com/articles/china-ousts-top-official-in-coronavirus-outbreaks-epicenter-11581568911) the party secretaries of Hubei province and Wuhan.
 
