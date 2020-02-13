@@ -56,7 +56,7 @@ So what is really happening?
 
 ### Takeaways
 
-* The radius of the circles are log-scaled to the number of confirmed cases, recoveries, and deaths, respectively.
+* The radii of the circles are log-scaled to the number of confirmed cases, recoveries, and deaths, respectively.
 * We can see that Hubei Province (in the centre) has the most cases. But also the most deaths by a significant margin.
 * This suggests that the number of deaths increase once the medical system becomes overburdened.
 * Or that the number of cases is much higher than confirmed (or reported).
