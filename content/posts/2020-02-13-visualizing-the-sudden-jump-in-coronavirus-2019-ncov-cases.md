@@ -1,23 +1,20 @@
 ---
 template: post
-title: Visualizing the sudden jump in Coronavirus (2019-nCov) cases
-slug: the-sudden-jump-in-coronavirus-(2019-ncov)-cases
+title: Visualizing the sudden jump in Coronavirus cases
+slug: the-sudden-jump-in-coronavirus-cases
 draft: false
 date: 2020-02-13T14:47:06.552Z
 description: >-
   Inconsistent numbers are being reported by health officials at the center of
   the outbreak. On February 11, the number of new confirmed cases slowed and the
   Dow closed at a record. But only a day later, health officials in Hubei
-  province confirmed 14,840 new infections. The total number of confirmed cases
-  in Hubei Province is now 48,206. In response, the CCP Party secretaries of
-  Hubei province and Wuhan.
+  province confirmed 14,840 new infections.
 category: Data Visualization
 tags:
   - Data Visualization
   - Epidemiology
 ---
-## What is going on with the Coronavirus?
-
+## What is going on with the Coronavirus (2019-nCov)?
 
 Inconsistent numbers are being [reported](https://www.nytimes.com/2020/02/12/health/coronavirus-cases-china.html) by health officials at the centre of the outbreak. On February 11, the number of new confirmed cases slowed and the Dow closed at a [record](https://www.wsj.com/articles/global-stocks-rise-as-optimism-prevails-11581503200). But only a day later, health officials in Hubei province confirmed 14,840 new infections. The total number of confirmed cases in Hubei Province is now 48,206. In response, the CCP [ousted](https://www.wsj.com/articles/china-ousts-top-official-in-coronavirus-outbreaks-epicenter-11581568911) the party secretaries of Hubei province and Wuhan.
 
@@ -25,19 +22,20 @@ So what is really happening?
 
 ## Confirmed cases
 
-<img src="/media/confirmed-cases.png" alt="Confirmed number of cases" width="100%"/>
+<img src="/media/confirmed-ncov2019.png" alt="Confirmed number of cases" width="100%"/>
 
-![](/media/confirmed-cases.png)
+![](/media/confirmed-ncov2019.png)
 
+* The majority of cases are still found in Hubei province. 
 * This sudden jump suggests there are many people in the centre of the outbreak that have not been diagnosed. 
 * Undiagnosed individuals increases the chances of spreading the virus leading to an increased Ro value.
 * The Coronavirus could have a transmission rate (Ro) as high as 3.0 without effective containment measures.
 
 ## Recovered cases
 
-<img src="/media/recovered-cases.png" alt="Confirmed number of cases" width="100%"/>
+<img src="/media/recovered-ncov2019.png" alt="Confirmed number of cases" width="100%"/>
 
-![](/media/recovered-cases.png)
+![](/media/recovered-ncov2019.png)
 
 ### Takeaways
 
@@ -46,9 +44,9 @@ So what is really happening?
 
 ## Deaths
 
-<img src="/media/death-cases.png" alt="Confirmed number of cases" width="100%"/>
+<img src="/media/death-ncov2019.png" alt="Confirmed number of cases" width="100%"/>
 
-![](/media/death-cases.png)
+![](/media/death-ncov2019.png)
 
 ### Takeaways
 
