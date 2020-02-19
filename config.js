@@ -27,7 +27,7 @@ module.exports = {
   author: {
     name: 'Carter Sprigings',
     photo: '/photo.jpg',
-    bio: 'Personal blog of Carter Sprigings. All views expressed are my own. Currently at the @ryersondmz. Alumnus of @next_canada and @mcgillu.',
+    bio: 'Personal blog of Carter Sprigings. All views expressed are my own. Building things at @ryersondmz. Alumnus of @next_canada and @mcgillu.',
     contacts: {
       email: 'carter@sprigings.com',
       twitter: 'cartersprigings',
