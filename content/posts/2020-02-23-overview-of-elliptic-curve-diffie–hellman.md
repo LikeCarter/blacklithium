@@ -57,7 +57,7 @@ Any two points can be used to identify a third point on the curve. This is shown
 Alice and Bob then exchange their public points $A$ and $B$ and multiply them by their private numbers.
 
 $$
-S = \alpha B = \alpha(\beta G) = \beta A = \beta(\alpha G) 
+S = \alpha B = \alpha(\beta G)
 $$
 
 $$
