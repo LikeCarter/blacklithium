@@ -35,11 +35,25 @@ $$ (y^2 - x^3 - 3x + 10)(\bmod\ 281) = 0 $$
 <img style="width: 100%" alt="Elliptic curve taurus mapping" src="https://s3.amazonaws.com/carter.sprigings.com/taurus.png
 "/>
 
-The resulting equation can be plotted as a taurus. Notice how it is still symmetrical about the x-axis. You can view the interactive taurus here. You can move the black dot in the center to see how the finite field is mapped.
+The resulting equation can be plotted as a taurus. Notice how it is still symmetrical about the x-axis. You can view the interactive taurus [here](https://observablehq.com/@likecarter/elliptic-curve-cryptography-in-5-minutes). You can move the black dot in the center to see how the finite field is mapped.
 
-Next, Alice and Bob choose their respective private numbers $\alpha$ and $\beta$. These are prime. Alice multiplies $G$ by $\alpha$ to arrive at a new point $A$. Bob multiplies $G$ by $\beta$ to arrive at a new point $B$. $$ A = \alpha G B = \beta G $$ Alice and Bob then exchange their public points $A$ and $B$ and multiply them by their private numbers.
+Next, Alice and Bob choose their respective private numbers (or keys) $\alpha$ and $\beta$. These are prime.
 
-$$ S = \alpha B = \alpha(\beta G) = \beta A = \beta(\alpha G) $$
+Alice multiplies $G$ by $\alpha$ to arrive at a new point $A$. Bob multiplies $G$ by $\beta$ to arrive at a new point $B$. The idea behind all of this is that one point on the curve added to itself multiple times will generate other points on the curve. Any two points can be used to identify a third point on the curve. This is shown in the animation below.
+
+<img style="width: 75%" alt="Elliptic curve taurus mapping" src="https://s3.amazonaws.com/carter.sprigings.com/ecc.gif
+"/>
+
+$$ 
+A = \alpha G
+B = \beta G 
+$$
+
+Alice and Bob then exchange their public points $A$ and $B$ and multiply them by their private numbers.
+
+$$
+S = \alpha B = \alpha(\beta G) = \beta A = \beta(\alpha G) 
+$$
 
 They now have an exclusive secret key $S$.
 
