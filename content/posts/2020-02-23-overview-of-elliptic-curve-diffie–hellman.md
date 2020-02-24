@@ -75,4 +75,4 @@ For ECC, due to the $\bmod\ p$ operation performed every time the generator is a
 
 This is known as the discrete logarithm problem (DLP) for elliptic curves. If given points $P$ and $Q$ on an elliptic curve $E$, what is $k$ such that $kP = Q$?
 
-The smallest integer solution $k$ to this problem is then called the discrete logarithm of $Q$ with respect to $P$. Represented as $k = logP (Q)$.` As long as proper parameters are chosen, it is extremely difficult to crack.
+The smallest integer solution $k$ to this problem is then called the discrete logarithm of $Q$ with respect to $P$. Represented as $k = logP (Q)$. As long as proper parameters are chosen, it is extremely difficult to crack.
