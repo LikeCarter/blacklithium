@@ -17,7 +17,7 @@ Genomic analysis has changed the way we can visualize the spread of pathogens. E
 
 For example, we can see all of the cases that originated in China (Hubei province) spread into distinct phylogenic trees. Cases in North America are coloured red.
 
-<img style="width: 100%" src="https://s3.amazonaws.com/carter.sprigings.com/covid19-tree-radial.png"/>
+<img src="https://s3.amazonaws.com/carter.sprigings.com/covid19-tree-radial.png"/>
 
 The interactive tree can be found at [nextstrain.org](https://nextstrain.org/ncov).
 
@@ -42,7 +42,7 @@ On the other hand, COVID-19 has a mortality of ~2%. This allows the virus to hav
 
 I admit that my [previous estimate](https://carter.sprigings.com/the-sudden-jump-in-coronavirus-cases) of a 5-10% mortality rate was incorrect. I failed to account for the majority of people who have mild symptoms and are not tested for COVID-19. The real figure is closer to ~2% (possibly greater if health systems begin to fail).
 
-Right now, there are two subtypes of Coronavirus, the S-type and its L-type descendent. Now, the L-type is found in the majority of cases, suggesting it is harbouring more aggressive mutations. These mutations are in the [receptor-binding domain of the COVID-19 spike protein](https://academic.oup.com/nsr/advance-article/doi/10.1093/nsr/nwaa036/5775463), likely making it more contagious.  Once the virus is analyzed, we will be able to understand what is being selected for.
+Right now, there are two major subtypes of Coronavirus, the S-type and its L-type descendent. Now, the L-type is found in the majority of cases, suggesting it is harbouring more aggressive mutations. These mutations are in the [receptor-binding domain of the COVID-19 spike protein](https://academic.oup.com/nsr/advance-article/doi/10.1093/nsr/nwaa036/5775463), likely making it more contagious.  Once the virus is analyzed, we will be able to understand what is being selected for.
 
 It is believed COVID-19 originated in bats (96.3%) and jumped to the Pangolin (~99% sequence similarity) before reaching humans. Assuming this is true, COVID-19 lives inside Bats without causing the species harm, whereas it is much more dangerous inside a human. That is why novel viruses are the most dangerous. They do not *know* how to live inside a human body. They have evolved to live inside a different animal.
 
