@@ -11,7 +11,7 @@ description: >-
 category: Data Visualization
 tags:
   - Epidemiology
-  - ''
+  - Data Visualization
 ---
 Genomic analysis has changed the way we can visualize the spread of pathogens. Every time a virus spreads to another person, it leaves a genomic signature via point mutations. Using a simple phylogenic tree, we can see the particular “strains” of COVID-19. It is trivial to use this data to trace the spread of COVID-19 from its origin across the world.
 
