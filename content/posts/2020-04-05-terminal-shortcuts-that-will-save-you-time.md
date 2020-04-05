@@ -4,12 +4,17 @@ title: Terminal shortcuts that will save you time
 slug: terminal-shortcuts-that-will-save-you-time
 draft: true
 date: 2020-04-05T19:53:41.746Z
-description: Shortcuts I wish I knew before I started coding in terminal.
+description: >-
+  Shortcuts I wish I knew before I started coding in terminal. There are many,
+  so I have only included the ones I used everyday.
 category: Programming
 tags:
   - Programming Bash Zsh
 ---
 
+code . - Open VSCode at the current directory
+
+open . - Open finder at the current directory
 
 Set option key to Esc+
 
