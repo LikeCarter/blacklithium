@@ -1,6 +1,6 @@
 ---
 template: post
-title: The World Is Addicted To Crude Oil
+title: The world is addicted to crude oil
 slug: the-world-is-addicted-to-crude-oil
 draft: false
 date: 2020-02-09T00:47:42.995Z
