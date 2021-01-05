@@ -1,6 +1,6 @@
 ---
 template: post
-title: Connect to Exchange Online PowerShell From MacOS
+title: Connect to Exchange Online PowerShell From MacOS - For Good
 slug: Connect-to-Exchange-Online-PowerShell-From-MacOS-For-Good
 draft: false
 date: 2021-01-05T17:14:44.173Z
