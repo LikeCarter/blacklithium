@@ -1,6 +1,6 @@
 ---
 template: post
-title: Getting SRTP/TLS working with Yeastar S100 and a VOIP.ms Trunk
+title: Getting SRTP/TLS working with Yeastar S100 and a VOIP (SIP) Trunk
 slug: srtp-yeastar-voipms
 draft: false
 date: 2021-01-17T21:05:23.632Z
@@ -15,6 +15,6 @@ This post is really a checklist:
 
 1. Make sure **Enable SRTP** is checked in the trunk settings.
 2. Make sure the port is set to **5061**, and the protocol is **TLS** in the trunk settings.
-3. Make sure **Use Encryption** is checked on the VOIP.ms portal, under advanced (for every account you wish to use it for).
+3. Make sure **Use Encryption** is checked on your VOIP portal (in this case VOIP.ms), under advanced (for every account you wish to use it for).
 4. Finally, the crux was ensuring that **Enable TLS** is checked under General > SIP on the PBX. This shouldn't be necessary, but it seems to be a bug.
 5. And don't forget to restart the PBX!
