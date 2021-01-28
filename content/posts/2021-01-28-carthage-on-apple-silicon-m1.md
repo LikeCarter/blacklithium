@@ -18,3 +18,9 @@ brew install carthage -s
 ```sh
 sudo ln -s /opt/homebrew/Cellar/carthage/0.36.1/bin/carthage /usr/local/bin/carthage
 ```
+
+When using carthage, you will need to build most things from source (things don't ship with Apple Silicon binaries yet). Use this command to build from source:
+
+```sh
+carthage update --no-use-binaries
+```
