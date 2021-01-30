@@ -1,6 +1,6 @@
 ---
 template: post
-title: Google Sloud SDK on Apple Silicon (M1)
+title: Google Cloud SDK on Apple Silicon (M1)
 slug: gcloud-sdk-m1-silicon
 draft: true
 date: 2021-01-30T20:19:10.804Z
