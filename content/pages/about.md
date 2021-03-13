@@ -4,9 +4,9 @@ template: "page"
 socialImage: "/media/image-2.jpg"
 ---
 
-I studied at McGill University (Class of 2019) and I'm currently working on [FYT](https://www.iamfyt.com). We are based in Toronto working out of the [DMZ at Ryerson](https://dmz.ryerson.ca/).
+I'm currently working on [Octoflock](https://www.octoflock.com). We are based in Toronto. Hit my line!
 
-You can find more of my projects on [Github](https://github.com/LikeCarter). 
+You can find more of my projects on [Github](https://github.com/LikeCarter).
 
 ## Contact me
 
