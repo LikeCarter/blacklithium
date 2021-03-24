@@ -14,6 +14,7 @@ tags:
   - Programming
   - iOS
 ---
+
 ## 1. How do I dismiss views and control navigation? Use bound variables.
 
 The documentation is unclear on how to properly dismiss a Modal or View. Most discussions lead you to using the `PresentationMode` environment variable. However, this solution leads to issues rendering navigation titles. The best solution is to use a bound variable and the `isActive` parameter.
@@ -25,16 +26,21 @@ struct ContentView: View {
     @State var show: Bool = false
 
     var body: some View {
-        return NavigationLink(destination: DetailView(show: self.$show), isActive: self.$show) {
-            Button(action: {
-                self.show = true
-            }) {
-                Text("Navigate")
+        return
+        NavigationView { 
+            NavigationLink(destination: DetailView(show: self.$show), isActive: self.$show) {
+                Button(action: {
+                    self.show = true
+                }) {
+                    Text("Navigate")
+                }
             }
         }
     }
 }
 ```
+
+Thanks to J. Brennan for the tip on wrapping `NavigationLink` in a `NavigationView`. Newer versions of Swift may require it.
 
 ```swift
 //  DetailView.swift
@@ -89,7 +95,7 @@ struct ChildView: View {
 
 `@ObservableObject` is best used for a class (containing one or more values) that conforms to `ObservableObject`. The `@Published` wrapper is used to indicate a member variable should refresh a view upon being set. The object must be manually passed from a parent to a child view.
 
-*When do I use @Published?*
+_When do I use @Published?_
 
 As little as possible. The property wrapper `@Published` is an _opt-in_ wrapper designed for use within an `ObservableObject`. All views using a variable wrapped with `@Published` are refreshed upon any change.
 
