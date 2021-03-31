@@ -26,8 +26,7 @@ struct ContentView: View {
     @State var show: Bool = false
 
     var body: some View {
-        return
-        NavigationView { 
+        return NavigationView { 
             NavigationLink(destination: DetailView(show: self.$show), isActive: self.$show) {
                 Button(action: {
                     self.show = true
@@ -40,7 +39,7 @@ struct ContentView: View {
 }
 ```
 
-Thanks to J. Brennan for the tip on wrapping `NavigationLink` in a `NavigationView`. Newer versions of Swift may require it.
+*Thanks to J. Brennan for the tip on wrapping `NavigationLink` in a `NavigationView`. Newer versions of Swift require it.*
 
 ```swift
 //  DetailView.swift

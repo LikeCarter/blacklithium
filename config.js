@@ -29,7 +29,7 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'Personal blog. Working on Octoflock!',
     contacts: {
-      email: 'carter@sprigings.com',
+      email: 'carter.sprigings@mail.mcgill.ca',
       twitter: 'cartersprigings',
       github: 'likecarter',
       linkedin: 'carter-sprigings',
