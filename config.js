@@ -16,6 +16,10 @@ module.exports = {
       path: '/'
     },
     {
+      label: 'Favourite Tweets',
+      path: '/pages/tweets'
+    },
+    {
       label: 'About',
       path: '/pages/about'
     },
