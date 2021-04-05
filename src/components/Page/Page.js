@@ -17,7 +17,7 @@ const Page = ({ title, children }: Props) => {
   return (
     <div ref={pageRef} className={styles["page"]}>
       <Helmet>
-        <script src="https://vouchpanel.com/js/embed.js" defer></script>
+        <script src="https://app.vouchpanel.com/js/embed.js" defer></script>
       </Helmet>
 
       <div className={styles["page__inner"]}>
