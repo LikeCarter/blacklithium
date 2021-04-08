@@ -12,4 +12,5 @@ Or playing chess... [challenge me](https://www.chess.com/member/likecarter)!
 
 ## Contact me
 
-The best way to reach me is via [carter.sprigings@mail.mcgill.ca](mailto:carter.sprigings@mail.mcgill.ca). You can also [tweet at me](https://twitter.com/cartersprigings).
+<!-- The best way to reach me is via [carter.sprigings@mail.mcgill.ca](mailto:carter.sprigings@mail.mcgill.ca).  -->
+You can [tweet at me](https://twitter.com/cartersprigings).
