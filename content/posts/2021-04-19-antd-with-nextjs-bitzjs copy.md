@@ -3,7 +3,7 @@ template: post
 title: Ant Design + BlitzJS
 slug: antd-with-nextjs-bitzjs
 draft: false
-date: 2021-01-30T20:19:10.804Z
+date: 2021-04-19T20:19:10.804Z
 description: Adding Ant Design (antd) to a BlitzJS (blitzjs) or NextJS (next) project.
 category: NextJS
 tags:
