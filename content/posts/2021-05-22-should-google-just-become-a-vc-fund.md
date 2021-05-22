@@ -19,6 +19,6 @@ Raising money from a Venture Capital (VC) firm is extremely challenging. The odd
 
 If we assume an average 10B valuation for these 6 startups, Google has created 60B * 47.5% = 28.5B in value for their shareholders.  
 
-Another view: Google has created 6 extremely innovative __companies with huge trajectories.
+Another view: Google has created 6 extremely innovative companies with huge trajectories.
 
 Seems pretty smart to me.
