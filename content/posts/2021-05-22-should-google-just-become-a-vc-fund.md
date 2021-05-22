@@ -7,9 +7,11 @@ date: 2021-05-22T19:19:10.804Z
 description: 'What if Google funded startups instead of hiring so many engineers? '
 category: Though Experiments
 tags:
-  - Startups Google Thoughts
+  - Startups
+  - Google
+  - Thoughts
 ---
-From their 2020 annual filing, Alphabet generated almost $183 billion in revenue. Of that, $147 billion — over 80% — came from Google’s ads business.
+From their 2020 annual filing, Alphabet generated almost $183 billion in revenue. Of that, 147B — over 80% — came from Google’s ads business.
 
 In 2020, Google employed 40,506 software engineers, and 18,593 people across its research and development divisions. Roughly 59,099 in total. While the information isn't public, we can safely assume that less than 5%, or 2,954 engineers, work directly or indirectly on Google Ads (Google Search, Youtube, etc.).
 
