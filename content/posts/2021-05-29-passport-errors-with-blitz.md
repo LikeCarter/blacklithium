@@ -2,7 +2,7 @@
 template: post
 title: Passport errors with Blitz!
 slug: third-party-login-blitz
-draft: true
+draft: false
 date: 2021-05-29T14:46:49.035Z
 description: >-
   When using a reverse-proxy with Nginx, it is important to set the
